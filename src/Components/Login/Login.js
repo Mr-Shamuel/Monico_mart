@@ -8,7 +8,7 @@ import { NavLink, useHistory, useLocation } from 'react-router-dom';
 
 import { UserContext } from '../../App';
 import logimg from '../../Img/loinimg.png'
-import Zoom from 'react-reveal/Zoom';
+ 
 import swal from 'sweetalert';
 const Login = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
@@ -83,7 +83,7 @@ const Login = () => {
 return (
     <div className="container">
 
-        <Zoom top>
+      
 
             <Grid container spacing={2} >
                 <Grid item sx={{ mt: 8 }} xs={12} md={6}>
@@ -124,7 +124,7 @@ return (
                     <img style={{ width: '50%', display: "block", margin: "30px auto" }} src={logimg} alt="" />
                 </Grid>
 
-            </Grid> </Zoom>
+            </Grid>  
 
 
 

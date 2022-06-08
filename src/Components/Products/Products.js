@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import './Products.css';
-import { Zoom } from 'react-reveal';
+ 
 const Products = (props) => {
     const { name, price, description, image } = props.pd;
     console.log(props);
@@ -16,7 +16,7 @@ const Products = (props) => {
     return (
 
         <div className="col-md-4 my-3 product">
-            <Zoom >
+          
                 <div>
                     <Card className=" " sx={{ maxWidth: 345 }}>
                         <CardMedia
@@ -40,7 +40,7 @@ const Products = (props) => {
                     </Card>
                 </div>
 
-            </Zoom>
+           
 
         </div>
 

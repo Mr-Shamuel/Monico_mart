@@ -2,14 +2,14 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import './Banner.css';
 import Typewriter from 'typewriter-effect';
-import Fade from 'react-reveal/Fade';
+ 
 const Banner = () => {
     return (
         <div className=" mx-2 ">
 
 
             <div className="row ">
-                <Fade left>
+               
                     <div className="col-6 ">
                         <Carousel className="carousel bg-dark">
                             <Carousel.Item>
@@ -40,8 +40,7 @@ const Banner = () => {
                         </Carousel>
                     </div>
 
-                </Fade>
-                <Fade right>
+                 
                     <div className="col-6 ">
                         <Carousel className="carousel">
                             <Carousel.Item>
@@ -71,9 +70,9 @@ const Banner = () => {
 
                         </Carousel>
                     </div>
-                </Fade>
+                 
             </div>
-            <Fade bottom>
+            
                 <div className="wrapper">
 
                     <h1 className="text-center d-flex mx-auto  mt-5 pt-5"> Monico
@@ -91,7 +90,7 @@ const Banner = () => {
 
                 </div>
 
-            </Fade>
+           
 
 
 

@@ -9,7 +9,7 @@ import firebaseConfig from '../Login/firebase.config';
 import swal from 'sweetalert';
 import regimg from '../../Img/register.png';
 
-import Zoom from 'react-reveal/Zoom';
+ 
 
 // const app  =  initializeApp(firebaseConfig);
 const Register = () => {
@@ -80,7 +80,7 @@ const Register = () => {
 
     return (
         <div className="container  ">
-            <Zoom>
+             
                 <div className="con">
                     <Grid container spacing={2}>
                         <Grid item sx={{ mt: 8 }} xs={12} md={6}>
@@ -128,7 +128,7 @@ const Register = () => {
                         </Grid>
                     </Grid>
                 </div>
-            </Zoom>
+           
 
         </div>
     );

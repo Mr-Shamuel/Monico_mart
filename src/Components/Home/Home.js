@@ -5,7 +5,7 @@ import './Home.css';
 import Cart from '../Cart/Cart';
 import cate from '../../Img/cate.png';
 import Banner from '../Banner/Banner';
-import Slide from 'react-reveal/Slide';
+ 
 const Home = () => {
     const allProducts = products.products;
 
@@ -38,7 +38,7 @@ const Home = () => {
             <Banner></Banner>
 
             <div className="row mt-5 pt-5">
-                <Slide left>
+               
                     <div className="col-md-2">
 
                         <div className="category_container">
@@ -56,7 +56,7 @@ const Home = () => {
                         </div>
 
                     </div>
-                </Slide>
+               
 
 
                 <div className="Products_container col-md-8">
@@ -78,9 +78,9 @@ const Home = () => {
 
               
                 <div className="cart_container borders col-md-2">
-                <Slide right>
+                
                     <Cart cart={cart}></Cart>
-                    </Slide>
+                     
                 </div>
 
                 

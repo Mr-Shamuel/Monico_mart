@@ -4,7 +4,7 @@ import './Shipment.css';
 import swal from 'sweetalert';
 import { CartDetails, UserContext } from '../../App';
 import shipimg from '../../Img/hd regimg.png';
-import Zoom from 'react-reveal/Zoom';
+ 
 const Shipment = () => {
 
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -23,11 +23,11 @@ const Shipment = () => {
     return (
 
         <div className="container mb-5">
-            <Zoom top>
+          
                 <h3 className="text-center">Please Complete your order by filling up this form</h3>
-            </Zoom>
+            
 
-            <Zoom>
+             
                 <div className="row">
                     <div className="col-md-6">
                         <form className="ship-form" onSubmit={handleSubmit(onSubmit)}>
@@ -56,7 +56,7 @@ const Shipment = () => {
                     </div>
                 </div>
 
-            </Zoom>
+           
 
 
         </div>
