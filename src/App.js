@@ -5,7 +5,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route
-} from "react-router-dom";
+} from "react-router-dom"; 
 import Search from "./Components/Search/Search";
 import Login from "./Components/Login/Login";
 import Register from "./Components/Register/Register";
