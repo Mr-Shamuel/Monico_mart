@@ -1,0 +1,27 @@
+.carousel img{
+    width:100%;
+    height:350px;
+    margin: 0px auto;
+   
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.wrapper h1 {
+    font-size: 60px;
+    margin: 10px 0px;
+    font-weight: bold;
+
+
+}
+.wrapper .wrapper_child{
+   padding-left: 10px;
+    color: crimson;
+}

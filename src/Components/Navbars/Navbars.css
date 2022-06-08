@@ -1,0 +1,68 @@
+.nav_bar {
+    /* background-color:#7aa3e6; */
+    padding: 0px;
+    margin: 0px;
+    
+
+
+
+}
+
+.nav_bar a {
+ 
+    color: black;
+    transition: 0.4s ease;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.nav_bar a:hover {
+    
+
+
+    transition: 0.7s ease;
+    color:  whitesmoke;
+    background-color:crimson;
+    border-radius: 7px;
+    
+
+
+}
+
+.nav_icon {
+    color: whitesmoke;
+}
+ 
+
+ 
+
+
+@media only screen and (max-width: 600px) {
+
+    .nav_bar a {
+        text-align: center;
+    }
+
+    .nav_bar a:hover {
+        border: none;
+        background-color: tomato;
+        transition: 0.7s ease;
+        color: whitesmoke;
+
+    }
+
+}
+
+/* ====================FOR LAPTOP DEVICE====================== */
+@media screen and(max-width:1024px) {
+    .nav_bar a:hover {
+        border: none;
+
+
+
+        color: crimson !important;
+
+
+    }
+}
