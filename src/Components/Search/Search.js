@@ -6,25 +6,30 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import products from '../../db.json';
- 
+import { motion } from "framer-motion"
 const Search = () => {
     const [query, setQuery] = useState('');
     const allProducts = products.products;
 
     return (
+        <motion.div animate={{ y: "-50px" }}
+            transition={{ duration: 1 }}>
 
-        <div className="container">
-       
-          <h6 className="text-center">Search Anything.....</h6>
-            <input type="text" placeholder="Search by product name.." onChange={(e) => setQuery(e.target.value)} name="" id="" className="form-control w-50 mx-auto my-5 text-success " />
-      
-            <div className="row">
+            <div className="container">
 
-                {
-                    allProducts.filter((pd) => pd.name.toLowerCase().includes(query)).map((pd) => (
 
-                        <div className="col-md-3 my-3">
-                           
+
+
+                <h6 className="text-center">Search Anything.....</h6>
+                <input type="text" placeholder="Search by product name.." onChange={(e) => setQuery(e.target.value)} name="" id="" className="form-control w-50 mx-auto my-5 text-success " />
+
+                <div className="row">
+
+                    {
+                        allProducts.filter((pd) => pd.name.toLowerCase().includes(query)).map((pd) => (
+
+                            <div className="col-md-3 my-3">
+
                                 <Card sx={{ maxWidth: 355 }}>
                                     <CardMedia
                                         component="img"
@@ -45,21 +50,26 @@ const Search = () => {
                                         <Button size="small" variant="contained" color="success" className="d-flex mx-auto">Price: ${pd.price}</Button>
                                     </CardActions>
                                 </Card>
-                         
-
-
-
-
-                        </div>
 
 
 
 
 
-                    ))}
+                            </div>
+
+
+
+
+
+                        ))}
+                </div>
+
             </div>
 
-        </div>
+        </motion.div>
+
+
+
 
     );
 };
