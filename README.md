@@ -4,7 +4,7 @@
 Monico mart is an Ecommerce site. Here user can add order differenet types of items. To purches those product user must have an account other wise you can't buy product.
 User can search their product by their name. There also caterories option where user can choose their specific product.
 
-liver server: https://monicobazar.netlify.app
+liver server: https://monicomart.netlify.app/
 
 
 
