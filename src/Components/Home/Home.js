@@ -41,7 +41,9 @@ const Home = () => {
                
                     <div className="col-md-2">
 
-                        <div className="category_container">
+                        <div className="category_container" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000">
 
                             <h4 className="text-center"><img style={{ height: "25px", marginBottom: "6px" }} src={cate} alt="" /> All Categories</h4>
                             <button className="btn w-100 mb-4" onClick={() => filterResult('Meat')}>Meat</button>
@@ -77,7 +79,9 @@ const Home = () => {
 
 
               
-                <div className="cart_container borders col-md-2">
+                <div className="cart_container borders col-md-2" data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1000">
                 
                     <Cart cart={cart}></Cart>
                      

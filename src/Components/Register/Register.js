@@ -9,7 +9,7 @@ import firebaseConfig from '../Login/firebase.config';
 import swal from 'sweetalert';
 import regimg from '../../Img/register.png';
 
- 
+
 
 // const app  =  initializeApp(firebaseConfig);
 const Register = () => {
@@ -80,55 +80,56 @@ const Register = () => {
 
     return (
         <div className="container  ">
-             
-                <div className="con">
-                    <Grid container spacing={2}>
-                        <Grid item sx={{ mt: 8 }} xs={12} md={6}>
-                            <Typography variant="body1" gutterBottom>Register</Typography>
-                            {<form onSubmit={handleLoginSubmit}>
-                                <TextField
-                                    sx={{ width: '75%', m: 1 }}
-                                    id="standard-basic"
-                                    label="Your Name"
-                                    name="name"
-                                    onBlur={handleNameOnBlur}
-                                    variant="standard" />
-                                <TextField
-                                    sx={{ width: '75%', m: 1 }}
-                                    id="standard-basic"
-                                    label="Your Email"
-                                    name="email"
-                                    type="email"
-                                    onBlur={handleOnBlur}
-                                    variant="standard" />
-                                <TextField
-                                    sx={{ width: '75%', m: 1 }}
-                                    id="standard-basic"
-                                    label="Your Password"
-                                    type="password"
-                                    name="password"
-                                    onBlur={handleOnBlur2}
-                                    variant="standard" />
 
-                                <Button sx={{ width: '75%', m: 1 }} type="submit" variant="contained">Register</Button>
-                                <NavLink
-                                    style={{ textDecoration: 'none' }}
-                                    to="/login">
-                                    <Button variant="text">Already Registered? Please Login</Button>
-                                </NavLink>
-                            </form>}
+            <div className="con" data-aos="zoom-in-up"
+                data-aos-duration="1000">
+                <Grid container spacing={2}>
+                    <Grid item sx={{ mt: 8 }} xs={12} md={6}>
+                        <Typography variant="body1" gutterBottom>Register</Typography>
+                        {<form onSubmit={handleLoginSubmit}>
+                            <TextField
+                                sx={{ width: '75%', m: 1 }}
+                                id="standard-basic"
+                                label="Your Name"
+                                name="name"
+                                onBlur={handleNameOnBlur}
+                                variant="standard" />
+                            <TextField
+                                sx={{ width: '75%', m: 1 }}
+                                id="standard-basic"
+                                label="Your Email"
+                                name="email"
+                                type="email"
+                                onBlur={handleOnBlur}
+                                variant="standard" />
+                            <TextField
+                                sx={{ width: '75%', m: 1 }}
+                                id="standard-basic"
+                                label="Your Password"
+                                type="password"
+                                name="password"
+                                onBlur={handleOnBlur2}
+                                variant="standard" />
+
+                            <Button sx={{ width: '75%', m: 1 }} type="submit" variant="contained">Register</Button>
+                            <NavLink
+                                style={{ textDecoration: 'none' }}
+                                to="/login">
+                                <Button variant="text">Already Registered? Please Login</Button>
+                            </NavLink>
+                        </form>}
 
 
 
 
-                        </Grid>
-                        <Grid item xs={12} md={6}>
-                            <img style={{ width: '50%', display: "block", margin: "30px auto" }} src={regimg} alt="" />
-
-                        </Grid>
                     </Grid>
-                </div>
-           
+                    <Grid item xs={12} md={6}>
+                        <img style={{ width: '50%', display: "block", margin: "30px auto" }} src={regimg} alt="" />
+
+                    </Grid>
+                </Grid>
+            </div>
+
 
         </div>
     );

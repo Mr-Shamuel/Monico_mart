@@ -22,7 +22,8 @@ const Shipment = () => {
 
     return (
 
-        <div className="container mb-5">
+        <div className="container mb-5" data-aos="zoom-out"
+        data-aos-duration="1000">
           
                 <h3 className="text-center">Please Complete your order by filling up this form</h3>
             
